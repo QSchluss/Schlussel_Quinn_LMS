@@ -46,7 +46,7 @@ public class LibraryManagmentSystem {
 	public static void fullBookList(ArrayList<Book> bookList) {
 		
 		//This method reads out each item in the ArrayList.  It simply iterates over every element in the ArrayList and calls its
-		//toString().  The toString() method is contained in the Book class.
+		//toString().  The toString() method is contained in the Book class.  It does not return a variable.
 		
 		for (Book e : bookList) {
 			System.out.println(e.toString());	}
@@ -56,7 +56,7 @@ public class LibraryManagmentSystem {
 		
 		//This method removes book entries according to the internal ID number, it iterates over each entry and compares user input
 		//against the ID stored in the book object.  The variable i is used to grab the index of the entry to be removed and is initialized
-		//before the for-loop to prevent concurrency issues.
+		//before the for-loop to prevent concurrency issues.  It returns the library ArrayList minus the removed entry.
 
 	    Scanner scan = new Scanner(System.in);
 	    System.out.println("Please input ID to remove: ");
